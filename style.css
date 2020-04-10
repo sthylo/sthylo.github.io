@@ -1,0 +1,406 @@
+
+body 
+{
+    font-family: arial, sans-serif;
+    border: 2px solid #E0E0E0;
+    margin: auto;
+    max-width: 900px;
+}
+
+header 
+{
+    display: flex;
+}
+
+#photo 
+{
+    background-color: #FFCA28;
+    width: 35%;
+    padding: 5% 0 5% 0;
+}
+
+#photo_CV_OT 
+{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2.5px solid;
+    border-color: rgba(38, 38, 38, 0.1);
+    overflow: hidden;
+    margin: auto;
+}
+
+.taille_photo
+{
+    margin-left: -20px;
+}
+
+#titre 
+{
+    width: 65%;
+    line-height: 110%;
+}
+
+h1 
+{
+    font-size: 250%;
+    padding: 15% 0 0 7%;
+    font-weight: lighter;
+}
+
+h1 > span 
+{
+    color: #FFCA28;
+    font-weight: bold;
+    letter-spacing: 3.5px;
+}
+
+h2 
+{
+    color: #2d3a40;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+}
+
+h2 > span 
+{
+    text-decoration: underline;
+    text-decoration-color: #FFCA28;
+    text-underline-position: under;
+}
+
+main 
+{
+    display: flex;
+}
+
+
+#bloc_gauche 
+{
+    width: 35%;
+    background-color: #FFCA28;
+}
+
+#bloc_gauche h3 
+{
+    background-color: #424242;
+    color: #FFCA28;
+    text-align: center;
+    padding: 4%;
+    margin: 0;
+    font-size: 120%;
+    font-weight: lighter;
+}
+
+address 
+{
+    font-style: normal;
+    padding: 10% 15% 15% 15%;
+    line-height: 1.2;
+    color: #424242;
+}
+
+a 
+{
+    text-decoration: none;
+    color: #424242;
+}
+
+a:hover 
+{
+    color: #424242;
+    border-bottom: 1px solid #424242;
+}
+
+a:active 
+{
+    color: #FF3D00;
+    border-bottom: 1px solid #FF3D00;
+
+}
+
+#informations > p 
+{
+    padding: 10% 15% 75% 15%;
+    line-height: 1.5;
+    text-align: justify;
+    color: #424242;
+}
+
+#informations2 > p
+{
+    padding: 10% 15% 75% 15%;
+    line-height: 1.5;
+    text-align: justify;
+    color: #424242;
+}
+
+#icones 
+{
+    display: flex;
+    flex-direction: row;
+    padding: 11%;
+}
+
+.icone 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    color: #424242;
+    margin: auto;
+}
+
+#bloc_droit 
+{
+    width: 65%;
+    color: #455A64;
+}
+
+#bloc_droit > h3 
+{
+    color: #000;
+    border-bottom: 2px solid #FFCA28;
+    padding-bottom: 1%;
+    width: 90%;
+    margin: auto;
+}
+
+h3 > i 
+{
+    color: #FFCA28;
+    padding-right: 3%;
+}
+
+#formation #experience_professionnelle 
+{
+    padding: 2% 0 2% 0;
+}
+
+.mise_en_page 
+{
+    display: flex;
+}
+
+.puce 
+{
+    margin: 4% 2% 0 5%;
+    color: #FFCA28;
+}
+
+.annee 
+{
+    margin: 1% 0 0 1%;
+    width: 100px;
+}
+
+.etablissement 
+{
+    padding-left: 10%;
+    width: 300px;
+}
+
+.taches 
+{
+    font-size: 92%;
+    line-height: 1.5;
+}
+
+#bloc_droit .recommandation_titre
+{
+    margin-top: 20px;
+}
+
+#recommandation 
+{
+    display: flex;
+    padding: 2% 0 0 5%;
+    line-height: 1.5;
+}
+
+.recommandation2 
+{
+    width: 230px;
+    padding-left: 15%;
+}
+
+
+
+@media all and (max-width: 768px){
+    
+    header 
+    {
+        flex-direction: column;
+    }
+
+    #photo 
+    {
+        width: 100%;
+        padding: 2% 0 2% 0;
+    }
+
+    #titre 
+    {
+        width: 95%;
+        text-align: center;
+    }
+
+    main 
+    {
+        flex-direction: column-reverse;
+    }
+
+    #bloc_droit 
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    #bloc_gauche 
+    {
+        width: 100%;
+    }
+
+    address 
+    {
+        padding: 5% 15% 5% 15%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #recommandation 
+    {
+        padding: 4% 0 4% 5%
+    }
+
+    h1 
+    {
+        padding-top: 5%;
+    }
+
+    h2 
+    {
+        padding-bottom: 5%;
+    }
+
+    #informations > p 
+    {
+        padding: 8% 15% 8% 15%;
+    }
+
+    #informations2 > p
+    {
+      padding: 8% 15% 8% 15%;  
+    }
+
+    #bloc_gauche h3 
+    {
+        border-right: none;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media all and (max-width: 500px)
+{
+        
+    h1 
+    {
+        font-size: 150%;
+    }
+
+    h2 
+    {
+        font-size: 130%;
+    }
+
+    .puce 
+    {
+        margin: 5% 2% 0 5%;
+    }
+}
+
+@media all and (max-width: 450px)
+{
+
+    #bloc_droit > h3 
+    {
+        font-size: 100%;
+    }
+
+    .puce 
+    {
+        margin: 6% 2% 0 5%;
+    }
+
+    #recommandation
+    {
+
+        flex-direction: column;
+    }
+
+    .recommandation2
+    {
+        width: 80%;
+        padding-left: 0;
+    }
+
+    #bloc_droit .recommandation_titre
+    {
+      margin-top: 20px;  
+    }
+}
+
+@media all and (max-width: 355px) 
+{
+
+    #photo_CV_OT 
+    {
+        width: 150px;
+        height: 150px;
+    }
+    
+    h2 
+    {
+        font-size: 120%;
+    }
+    
+    .mise_en_page 
+    {
+        flex-direction: column;
+    }
+
+    .etablissement 
+    {
+        margin-top: -17px;
+        padding-left: 0;
+        width: 250px;
+    }
+
+    .puce 
+    {
+        margin-top: -17px;
+        visibility: hidden;
+    }
+
+    #bloc_droit > h3 
+    {
+        width: 100%;
+    }
+
+    .annee 
+    {
+        margin: 0;
+    }
+
+    #recommandation
+    {
+        flex-direction: column;
+    }
+
+
+}
